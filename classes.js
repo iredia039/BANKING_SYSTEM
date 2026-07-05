@@ -100,4 +100,13 @@ class bankAccount {
         
     } 
 }
+
+    activeStatus(){
+        if (this.isActive === true) {
+            console.log('account is active');
+        } else {
+            console.log('account is inactive');
+            
+        }
+    }
 };
