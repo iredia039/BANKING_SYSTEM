@@ -92,10 +92,7 @@ class bankAccount {
     } else if (this.accountType !== 'savings' && this.accountType !== 'current') {
             console.log('account type does not exist')
 
-        } else if (recipientAccount === undefined) {
-        console.log('account does not exist');
-        
-    } else if (this.balance >= amount) {
+        } else if (this.balance >= amount) {
          this.balance -= amount
          recipientAccount.balance += amount
     } else if (this.balance < amount) {
